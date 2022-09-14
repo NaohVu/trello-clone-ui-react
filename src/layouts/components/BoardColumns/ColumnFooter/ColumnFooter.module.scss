@@ -1,0 +1,27 @@
+.column-footer {
+    min-height: var(--height-column-footer);
+    margin-bottom: 8px;
+    font-size: 1.6rem;
+    margin: 0 12px 0;
+    padding-left: 10px;
+    border-radius: 3px;
+    color: #5e6c84;
+    cursor: pointer;
+    align-items: center;
+    display: flex;
+    &-icon {
+        height: 100%;
+        padding-right: 12px;
+        font-size: 12px;
+    }
+    &-text {
+        width: 100%;
+        height: 100%;
+        align-items: center;
+        display: flex;
+    }
+    &:hover {
+        background-color: darken($color: #ebecf0, $amount: 9);
+        color: var(--text-color);
+    }
+}

@@ -1,0 +1,30 @@
+.column-content {
+    max-height: var(--height-column-content);
+    min-height: 10px;
+    overflow-y: auto;
+    overflow-x: hidden;
+    &_form {
+        padding-left: 10px;
+
+        &-input {
+            min-height: 54px;
+            max-height: 164px;
+            margin-bottom: 8px;
+            font-size: 14px !important;
+
+            &:focus {
+                border: none;
+                box-shadow: none !important;
+            }
+        }
+
+        &-icon-delete {
+            font-size: 2rem;
+            margin-left: 8px;
+            cursor: pointer;
+        }
+    }
+    &-empty {
+        height: 10px;
+    }
+}

@@ -1,0 +1,54 @@
+.board-columns {
+    padding-left: 10px;
+    display: flex;
+    overflow-x: auto;
+    overflow-y: hidden;
+    white-space: nowrap;
+    height: calc(100vh - var(--height-navbarApp) - var(--height-navbarBoard) - 4px);
+    .wrapper {
+        cursor: pointer;
+        width: 272px;
+
+        .add-list {
+            border-radius: 4px;
+            color: var(--white);
+            background-color: #ffffff3d;
+            width: 100%;
+            height: var(--height-column-header);
+            align-items: center;
+            display: flex;
+            &_icon-add {
+                margin: 0 5px;
+            }
+            &:hover {
+                background-color: #ffffff52;
+            }
+        }
+
+        .add-list_open {
+            border-radius: 4px;
+            background-color: #fff;
+            padding: 4px 4px;
+            input {
+                height: 40px;
+                font-size: 1.6rem;
+                border: 2px solid var(--bg-color);
+                border-radius: 4px;
+                width: 100%;
+                padding: 0 10px;
+                line-height: 1.6rem;
+            }
+            &-wrapper {
+                margin-top: 4px;
+            }
+            &-icon-delete {
+                color: #333;
+                font-size: 2.2rem;
+                padding-left: 6px;
+            }
+        }
+        form {
+            width: 100%;
+        }
+    }
+}

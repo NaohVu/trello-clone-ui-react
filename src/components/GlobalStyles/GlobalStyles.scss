@@ -1,0 +1,119 @@
+@import 'normalize.css';
+@import url('https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@400;600');
+@import '~bootstrap/scss/bootstrap';
+
+:root {
+    --primary: #fe2c55;
+    --black: #000;
+    --white: #fff;
+    --text-color: #161823;
+    --bg-color: #0079bf;
+    --appbar-bg-color: #0067a3;
+    --col-bg-color: #ebecf0;
+
+    --height-navbarApp: 40px;
+    --height-navbarBoard: 50px;
+    --height-column-header: 36px;
+    --height-column-footer: 28px;
+    --height-column-content: calc(
+        100vh - var(--height-navbarApp) - var(--height-navbarBoard) - var(--height-column-header) -
+            var(--height-column-footer) - 30px
+    );
+    --font-family: 'Source Sans Pro', sans-serif;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 62.5%;
+}
+
+body {
+    font-family: var(--font-family);
+    font-size: 1.6rem;
+    line-height: 1.5;
+    text-rendering: optimizespeed;
+    color: var(--text-color);
+    overflow-y: hidden;
+}
+
+// Scrollbar CSS
+html *::-webkit-scrollbar {
+    border-radius: 0;
+    width: 8px;
+    height: 12px;
+}
+
+html *::-webkit-scrollbar-thumb {
+    border-radius: 4px;
+    background-color: rgba(0, 0, 0, 0.15);
+    &:hover {
+        background: #555;
+    }
+}
+
+html *::-webkit-scrollbar-track {
+    border-radius: 0;
+    background-color: rgba(0, 0, 0, 0);
+}
+
+html *::-webkit-scrollbar-button {
+    width: 5px;
+}
+
+html *::-webkit-scrollbar-track-piece {
+    background: #091e4214;
+}
+
+button,
+input,
+[tabindex] {
+    outline: none;
+    border: none;
+}
+
+a {
+    color: var(--text-color);
+    text-decoration: none;
+}
+
+.App {
+    background-color: var(--bg-color);
+    height: 100vh;
+}
+
+// smooth-dnd
+
+.card-ghost {
+    transition: transform 0.18s ease;
+    transform: rotateZ(5deg);
+}
+
+.card-ghost-drop {
+    transition: transform 0.18s ease-in-out;
+    transform: rotateZ(0deg);
+}
+
+.card-drop-preview {
+    background-color: rgba(150, 150, 200, 0.1);
+    border: 1px dashed #abc;
+    margin: 5px;
+}
+
+.column-drop-preview {
+    background-color: rgba(150, 150, 200, 0.1);
+    border: 1px dashed #abc;
+    margin: 5px 45px 5px 5px;
+}
+
+.smooth-dnd-container {
+    min-height: 10px;
+}
+
+.d-flex {
+    display: flex;
+}

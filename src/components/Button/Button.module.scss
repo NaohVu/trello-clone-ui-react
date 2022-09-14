@@ -1,0 +1,37 @@
+.wrapper {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    min-width: 100px;
+    padding: 9px 16px;
+    border-radius: 4px;
+    font-size: 1.6rem;
+    font-weight: 700;
+    font-family: var(--font-family);
+    cursor: pointer;
+    background-color: var(--white);
+    border: 1px solid transparent;
+    user-select: none;
+}
+
+.primary {
+    color: var(--white);
+    background-color: var(--bg-color);
+    border-color: var(--bg-color);
+
+    &:hover {
+        border-color: var(--bg-color);
+        background: linear-gradient(0deg, rgba(0, 0, 0, 0.06), rgba(0, 0, 0, 0.06)), #344bce;
+    }
+}
+
+// Button sizes
+.small {
+    min-width: 88px;
+    padding: 4px 16px;
+}
+
+.large {
+    padding: 14px 16px;
+    min-width: 140px;
+}
