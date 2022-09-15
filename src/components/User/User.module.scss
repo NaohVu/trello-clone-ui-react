@@ -1,0 +1,19 @@
+.btn-user {
+    background-color: transparent;
+    border: none;
+    box-shadow: none;
+    display: block;
+    height: 32px;
+    margin-right: 0;
+    position: relative;
+    width: 32px;
+    outline: 0;
+    cursor: pointer;
+}
+.information {
+    height: 32px;
+    width: 32px;
+    line-height: 32px;
+    background-image: url(../../../public/50.png);
+    background-size: cover;
+}

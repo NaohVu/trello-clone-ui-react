@@ -1,4 +1,23 @@
 .navbar-board {
     height: 50px;
     padding-left: 10px;
+    display: flex;
+}
+
+.item {
+    color: white;
+    height: calc(var(--height-navbarApp) - 10px);
+    padding: 0 6px;
+    border-radius: 4px;
+    align-items: center;
+    display: flex;
+    cursor: pointer;
+    &:hover {
+        background-color: darken($color: #0067a3, $amount: 9);
+    }
+}
+
+.icon-arrow {
+    margin: 0 6px;
+    font-size: 12px;
 }
